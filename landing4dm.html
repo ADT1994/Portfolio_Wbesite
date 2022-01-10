@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aman - Data Modeling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>AMAN</strong> <span>Python|SQL|Tableau	</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing4dm.html">Projects Overview</a></li>
+							<li><a href="landing.html">Data Cleaning</a></li>
+							<li><a href="landing2.html">Data Analysis</a></li>
+							<li><a href="landing3dv.html">Data Visualization</a></li>
+						</ul>
+						
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/AD_DAPIC1_21.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h2>Project Objectives:</h2>
+							</header>
+							<div class="content">
+								<p>Project 1(Retail Customer Transactions Data): Objective of this project is to analyze data for a retail store and find customer buying habits, the sales potential of different categories  & tracking purchases/returns of different product categories.</br><br />
+								Project 2 (Mexican Restaurant Data): Analyze interesting patterns and customer preferences to help understand market and make investment decisions,	 visualize data using Strategic Dashboards.
+							    </br></br>Project 3 (Covid-19 Data) : Provided by Ourdatain world, objective of this project was to get insights about infection trends and casualties caused by covid -19 around the world. Which countries or locations are more successful in controlling covid-19.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>About Data:</h2>
+									</header>
+									<p>Project 1: Retail Customer Transactions Data: This Data provided by Kaggle contain three tables (Customer, Transactions, product_information).
+										Transaction Data contains columns like transaction Id, cust_Id, product_code Qty, Date, amount etc .It is can be connected to the customer table using cust_Id as a key.
+										Further product_information table containg  product category and sub category code and columns for respective products(Men,women,mobile...).</br></br>
+										Project 2: Maven Analystics, Mexican Resturant Data. This data includes 5 tables : Consumers,Consumer Preference,Resturant,Resturant cusine & Ratings.</br></br>
+										Project 3: Covid-19 Data : This data is provided by (Our World in Data) till Spetember 2021. It contains profiles of 207 countries, Which contain information like total death, new cases, testing, location.
+										<br></br>
+										<br>Tools Used: SQL, Python, Excel, Tableau, MysqlServer </br>
+										<br>Python Libraries : Pandas, Numpy, Seaborn, Matplotlip</br>
+										
+									     </p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<span class="image">
+										<img src="images/Retail.jpg" alt="" data-position="center center" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Retail Customer Transactions Data</h3>
+											</header>
+											<p>
+												<ul style="list-style-type:disc">
+													<li>After combining transaction and product info table and adding features like weekend/weekday columns.
+														It can be determined which days, month, a year has more transactions or sale. As well as seasonal variation in the sale.</li>
+													<li>After grouping data by product category & sub-category, 
+														product-based transactions variation can be determined. In this data Home Kitchen, Electronics are 
+														the highest source of sale followed by clothing and footwear. These insights will be critical for maintaining inventory. </li>
+													<li>The third important insight that could be found is through Sale/Return feature added to data. It is useful in determining which product has a 
+														higher tendency of being returned like in this data clothing Women, Tools, Personal appliances have a count of 10-11 returns per 100 sales transactions.
+                                                        Important to understand this in order to reduce losses.
+													</li>
+												 </ul>
+												
+												  </p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="image">
+										<img src="images/mexico.jpg" alt="" data-position="top center" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Mexican Resturant Data Insights for Investment Decision</h3>
+											</header>
+											<p>
+												<ul style="list-style-type:disc">
+													<li>Consumer data, Rating data, and Restaurant details data can be combined using consumer ID & Restaurant ID as a key.
+												     Data obtained can be used to detrmine various insights Customer age, factors affecting resturant rating.</li>
+													<li>For these 130 resturants having facilities like bar, smoking area,parking increase Rating.Also, 
+													frenchised resturants have heigher rating than non-frenchised.</li>
+													<li>City of Luis Potos has maximum customer share(66.15%), followed by Tamaulipas 19.23% customer share and 23 resturants and
+													 Morelos customer share 20.80% and 23 resturants.</li>
+													<li>Opening medium budget resturant with Mexcian cusine  having facilities like smoking area and bar will attract major share of customer.</li>
+												</ul>
+											</p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="image">
+										<img src="images/covid.png" alt="" data-position="25% 25%" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Covid-19 Data Anlysis of Infection Trend</h3>
+											</header>
+											<p><ul style="list-style-type:disc"><li>Checked casualties count by covid -19 virus of 207 countries on the world map, along with total cases. </li>
+											<li>After differentiating locations like countries and continent seprarately, Infection by continent can be
+												 checked till Sepetember 2021 Asia and Europe are on top of the
+												  list with 58.74 Million & 52.11 Million total infections. Europe still has more death count  1.13 Millions </li>
+												<li>Infection rate can be calculated by dividing the total population of a country by Total infections. As this data is a 
+													Time series data calculated infection rate can be tracked  Over the months and show visually on Tableau.</li></ul></p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>More Details:</h2>
+									</header>
+									<p>Please feel free to access my complete projects and more such Visualizations from GitHub, Linkedin & Tableau public.</p>
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/ADST21/Projects_Python" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/amandeepsinghthakur/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; AMAN</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

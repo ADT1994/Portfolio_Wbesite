@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aman - Data Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>AMAN</strong> <span>Python|SQL|Tableau	</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing4dm.html">Projects Overview</a></li>
+							<li><a href="landing.html">Data Cleaning</a></li>
+							<li><a href="landing2.html">Data Analysis</a></li>
+							<li><a href="landing3dv.html">Data Visualization</a></li>
+						</ul>
+						
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/AD_DAPIC1_21.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h2>Data Analysis Higlights:</br>Project- Retail Customer Data Analysis & Mexican Resturant Data</h2>
+							</header>
+							<div class="content">
+								<p>Customer Transaction Data : This Data(source: Kaggle) includes day to day transactions of customers, It includes three tables: Customer Data, Product Category, Transactions of 4 years<br />
+								Mexican Restaurant Data: Data source: (Maven Analytics), this data was provided by maven analytics It includes data of 130 Mexican restaurants and their customers.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Finding if a transaction is a Sale or Return type </h2>
+									</header>
+									<p>Some of the values quantity & Rate column of data set are negative while most of them were positive, This implies that particular transaction is a return type.This criteria was used to check if the transaction was Positive(Sale) or Negative(return).
+										These categeorical features was added to the final data set. Further this data set was converted to new data set grouped by Product category column(Women, men, kids, Bath, Furnishing, etc.) to check which category has more return transactions.
+									     </p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<span class="image">
+										<img src="images/AD_DA1.png" alt="" data-position="center center" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Finding Sales to Return Ratio</h3>
+											</header>
+											<p>Once another categorical feature is added to the data frame and grouped by product category, further analysis can be done to get ratios that tell some story. This new grouped data set also aggregated on counts, to get sales and return counts of each product category.
+												To get the return/sales ratio of different products category, their return count was divided by sales counts.These ratios give light to the fact that women, men, kids , mobiles category has most return( 10-12 returns per 100 sales). Categories like DIY, Personal Appliances, 
+												cameras have the least returns per 100 sales Transactions(9-10).  </p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="image">
+										<img src="images/AD_DAPIC2.png" alt="" data-position="top center" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Checking Transaction Day (Weekend(including Friday) or Weekday)</h3>
+											</header>
+											<p>After converting object type Date column to dateTime format, weekday can be extracted using weekday() function of pandas DateTime library. This function returns a day number (1 to 7)
+												.These numbers can be furher used to get day(Monday-Sunday) and accordingly check if the transaction day was weekday or weekend. Friday is included as the weekend.
+											</p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="image">
+										<img src="images/datacleani_MR.png" alt="" data-position="25% 25%" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Analysing Mexico Resturants Rating</h3>
+											</header>
+											<p>Restaurant table and Rating tables were joined using MySQL on Restaurant_ID, Average rating of the restaurant was calculated using groupby function of SQL
+											 , to calculate how average rating if getting affected by different services provided by restaurants. Other factors related to customers like drinking level, mode of transportation, occupation of customers , budget were used to understand more about customer .This will help in making more customer-centric investment decision.
+											</p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>More Details:</h2>
+									</header>
+									<p>Please feel free to access my complete projects and more such visualizations from GitHub and Tableau public.</p>
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								
+								<li><a href="https://github.com/ADST21/Projects_Python" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/amandeepsinghthakur/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; AMAN</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

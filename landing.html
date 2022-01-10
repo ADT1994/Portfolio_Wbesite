@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aman - Data Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>AMAN</strong> <span>Python|SQL|Tableau	</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing4dm.html">Projects Overview</a></li>
+							<li><a href="landing.html">Data Cleaning</a></li>
+							<li><a href="landing2.html">Data Analysis</a></li>
+							<li><a href="landing3dv.html">Data Visualization</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/AD_DCPIC1.png" alt="" />
+							</span>
+							<header class="major">
+								<h2>Data Cleaning Highlights:</br>Project- Customer Data Analysis & Covid-19 Data</h2>
+							</header>
+							<div class="content">
+								<p>Customer Transaction Data : This Data(source: Kaggle) includes day to day transactions of customers, It includes three tables: Customer Data, Product Category, Transaction of 3 years<br />
+								Covid-19 Data: Data source: Ourworldindata, this data includes information about all covid infection of 207 country around the world.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Checking for NULL/NA values and replacing/removing them</h2>
+									</header>
+									<p>Although initial Data set about retail store do not contain any null values. After merging different tables through primary keys(Prod_cat_code) creates null values. They will be checked for their weightage and removed from data accordingly.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+								
+
+									<span class="image">
+										<img src="images/Data_clean1.png" alt="" data-position="center center"/>
+									</span>
+
+
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Null Values After Merging Tables</h3>
+											</header>
+											<p>After merging (Transaction+product_Cat) with customer Tables using customer_id as the primary key, there are around 141 null values. There is no data available for these 141 null values in most of the columns. Droping these rows was the better option. </p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="image">
+										<img src="images/dataclean_2.png" alt="" data-position="top center" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Cleaning Date column</h3>
+											</header>
+											<p>While trying to extract date features from data, the whole column was object type and not
+											 dateTime type. Many of the rows were mixed date style  of %dd-%mm-%yyyy & %dd/%mm/%yyyy.
+											 It was necessary to convert the whole column into one type of date,before converting it into a dateTime
+											data type. Only then features extraction like month, years,
+											 weekend, or weekday of transaction could be done.</p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<span class="image">
+										<img src="images/Dcleaning_cov.png" alt="" data-position="25% 25%" />
+									</span>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Cleaning Covid-19 Data from MySQL & Extracting Important Data </h3>
+											</header>
+											<p>Multiple null values were there they were
+											 dropped using the Excel filter function. Important variables aggregated with group function of SQL.</p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>More Details:</h2>
+									</header>
+									<p>	Please feel free to access my complete projects and more such Visualizations from GitHub, Linkedin & Tableau public.</p>
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								
+								
+								<li><a href="https://github.com/ADST21/Projects_Python" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/amandeepsinghthakur/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; AMAN</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
